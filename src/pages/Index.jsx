@@ -38,12 +38,14 @@ export default function Index ({restaurants, createRestaurant}) {
     const loaded = () => {
         return restaurants.map(restaurant => (
             <div key={restaurant._id} className="restaurant">
+                <br/><br/>
                 <Link to={`/restaurants/${restaurant._id}`}>
                     <h1>{restaurant.name}</h1>
                     <img src={restaurant.image} alt={restaurant.name} />
-                    <h3>{restaurant.link}</h3>
+                    <h3>{restaurant.link}</h3>    
                 </Link>
             </div>
+            
         ))
     }
     const loading = () => <h1>Food Loading...</h1>
