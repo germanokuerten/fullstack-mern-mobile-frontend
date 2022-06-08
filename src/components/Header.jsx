@@ -2,6 +2,10 @@ import { Link } from "react-router-dom"
 
 export default function Header (){
     return (
-        <h1> Header </h1>
+        <nav className="nav">
+            <Link to={"/"}>
+                <div>Restaurant Finder App</div>
+            </Link>
+        </nav>
     )
 }

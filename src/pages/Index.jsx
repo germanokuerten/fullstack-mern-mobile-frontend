@@ -3,7 +3,7 @@ import { useState } from "react"
 
 export default function Index ({restaurants, createRestaurant}) {
 
-    const [newForm, setNewFrom] = useState({
+    const [newForm, setNewForm] = useState({
         name: "",
         image: "",
         link: "",
@@ -14,7 +14,7 @@ export default function Index ({restaurants, createRestaurant}) {
 
     // handleChange function for form
     const handleChange = (event) => {
-        setNewFrom((prevState) => ({
+        setNewForm((prevState) => ({
             ...prevState,
             [event.target.name]: event.target.value,
         }))
@@ -93,10 +93,9 @@ export default function Index ({restaurants, createRestaurant}) {
               placeholder="menu3"
               onChange={handleChange}
             />
-
-            <input type="submit" value="Create Person" />
+            <input type="submit" value="Create New Restaurant" />
           </form>
-            {people ? loaded() : loading()}
+            {restaurants ? loaded() : loading()}
         </section>
       )
 }
