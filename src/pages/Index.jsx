@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
 
-export default function Index ({restaurants, createRestaurant}) {
+export default function Index ({restaurants, createRestaurants}) {
 
     const [newForm, setNewForm] = useState({
         name: "",
@@ -23,7 +23,7 @@ export default function Index ({restaurants, createRestaurant}) {
     // handleSubmit function for form
     const handleSubmit = (event) => {
         event.preventDefault()
-        createRestaurant(newForm)
+        createRestaurants(newForm)
         setNewForm({
             name: "",
             image: "",
@@ -37,7 +37,7 @@ export default function Index ({restaurants, createRestaurant}) {
     // loaded function
     const loaded = () => {
         return restaurants.map(restaurant => (
-            <div key={restaurant._id} className="restaurant">
+            <div key={restaurant._id} className="restaurants">
                 <br/><br/>
                 <Link to={`/restaurants/${restaurant._id}`}>
                     <h1>{restaurant.name}</h1>
