@@ -22,6 +22,6 @@ A fullstack Restaurants list application using React and Express.
 | App Name | Mern Mobile |
 | Description | A fullstack Restaurants list application using React and Express. |
 | Developers | Germano Kuerten |
-| Live Website |  |
+| Live Website | https://willowy-pasca-3f909a.netlify.app/ |
 | Frontend Repo | https://github.com/germanokuerten/fullstack-mern-mobile-frontend |
 | Backend Repo | https://github.com/germanokuerten/fullstack-mern-mobile-backend |
